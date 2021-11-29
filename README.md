@@ -30,7 +30,7 @@ To get started, [download][maven-download] and [install][maven-install] it.
 
 * In the project path, open the shell console, install the dependencies and run the application:
     ```shell
-    mvn clean install
+    mvn clean install -Dmaven.test.skip=true
     ```
     ```shell
     mvn spring-boot:run
