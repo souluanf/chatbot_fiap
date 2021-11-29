@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: chatbot
+
+telegram:
+  token: ${TELEGRAM-TOKEN}
+
+open-weather-map:
+  token: ${OPEN-WEATHER-TOKEN}
+
+google:
+  name: fiap-bot
+  projectid: chat-bot-fiap-dewd
+  languageCode: en-US
+
+logging:
+  level:
+    web: fatal
