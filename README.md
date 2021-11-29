@@ -30,9 +30,9 @@ To get started, [download][maven-download] and [install][maven-install] it.
     mvn clean install
     ```
 ### Run Application
-  ```shell
-  mvn spring-boot:run
-  ```
+    ```shell
+    mvn spring-boot:run
+    ```
 
 
 [maven]: https://maven.apache.org
