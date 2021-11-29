@@ -30,15 +30,22 @@ public class TelegramService {
         bot.setUpdatesListener(updates -> {
             for (Update update : updates) {
                 Message message = update.message();
-                if (message.messageId() == 1 || message.text().equals("/iniciar")) {
-                    start(bot, message);
-                } else if (message.text().equals("/previsao") || previsao) {
-                    weather(bot, message);
-                } else if (message.text().equals("/limpar")) {
-                    clean(bot, message);
-                } else {
-                    dialogFlow(dialogService, bot, message);
-                }
+                
+                if (update.message() != null) {
+                	if (message.messageId() == 1 || message.text().equals("/iniciar")) {
+                		start(bot, message);
+                	} else if (message.text().equals("/previsao") || previsao) {
+                		weather(bot, message);
+                	} else if (message.text().equals("/limpar")) {
+                		clean(bot, message);
+                	} else {
+                		dialogFlow(dialogService, bot, message);
+                	}
+					
+				}else {
+					System.out.println("Mensagem nula, indo para próxima.");
+				}
+                
             }
             return UpdatesListener.CONFIRMED_UPDATES_ALL;
         });
