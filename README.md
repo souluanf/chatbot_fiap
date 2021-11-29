@@ -28,13 +28,19 @@ To get started, [download][maven-download] and [install][maven-install] it.
 
 ### Run Application
 
-* In the project path, open the shell console, install the dependencies and run the application    
-    ```shell
-    mvn spring-boot:run
-    ```
+* In the project path, open the shell console, install the dependencies and run the application:
     ```shell
     mvn clean install
     ```
+    ```shell
+    mvn spring-boot:run
+    ```
+
+
+### Authors:
+
+[Carlos Jr.](https://github.com/cjunior1976) | [Juscelino Carvalho](https://github.com/JuscelinoCarvalho) | [Luan Fernandes](https://github.com/souluanf) | 
+[Paulo Bof](https://github.com/paulobof) | [Wesley Guimaraes](https://github.com/wees-guimaraes)
 
 
 [maven]: https://maven.apache.org
