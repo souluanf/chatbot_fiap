@@ -1,4 +1,4 @@
-# Dialogflow API Spring chatbot
+# ChatBotFiap Dialogflow
 
 These project demonstrate the use of the [Dialogflow API][dialogflow] to create a chatbot.
 
@@ -25,13 +25,15 @@ To get started, [download][maven-download] and [install][maven-install] it.
     ```shell
     set GOOGLE_CLOUD_PROJECT=PROJECT_ID
     ```
-* In your project path, open shell console and install dependencies:
-    ```shell
-    mvn clean install
-    ```
+
 ### Run Application
+
+* In the project path, open the shell console, install the dependencies and run the application    
     ```shell
     mvn spring-boot:run
+    ```
+    ```shell
+    mvn clean install
     ```
 
 
