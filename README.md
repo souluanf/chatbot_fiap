@@ -17,7 +17,7 @@ To get started, [download][maven-download] and [install][maven-install] it.
     set GOOGLE_APPLICATION_CREDENTIALS=path/file.json
     ```
     ```shell
-    set OPEN-WEATHER-TOKEN=OPEN_WEATHER_TOKEN
+    set OPEN-WEATHER-TOKEN=e0d9c4cf8763a9a2575a1b087f10fde3
     ```
     ```shell
     set TELEGRAM-TOKEN=TELEGRAM_TOKEN
