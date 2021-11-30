@@ -10,7 +10,7 @@ open-weather-map:
 
 google:
   name: fiap-bot
-  projectid: chat-bot-fiap-dewd
+  projectid: ${GOOGLE_CLOUD_PROJECT}
   languageCode: en-US
 
 logging:
