@@ -29,8 +29,9 @@ public class TelegramService {
         TelegramBot bot = new TelegramBot(appConfig.getTelegramToken());
         bot.setUpdatesListener(updates -> {
             for (Update update : updates) {
+
                 Message message = update.message();
-                
+
                 if (update.message() != null) {
                 	if (message.messageId() == 1 || message.text().equals("/iniciar")) {
                 		start(bot, message);
@@ -42,10 +43,7 @@ public class TelegramService {
                 		dialogFlow(dialogService, bot, message);
                 	}
 					
-				}else {
-					System.out.println("Mensagem nula, indo para próxima.");
 				}
-                
             }
             return UpdatesListener.CONFIRMED_UPDATES_ALL;
         });
