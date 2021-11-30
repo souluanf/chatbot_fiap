@@ -39,7 +39,7 @@ To get started, [download][maven-download] and [install][maven-install] it.
 
 ### Authors:
 
-[Carlos Jr.](https://github.com/cjunior1976) | [Juscelino Carvalho](https://github.com/JuscelinoCarvalho) | [Luan Fernandes](https://github.com/souluanf) | 
+[Carlos Junior](https://github.com/cjunior1976) | [Juscelino Carvalho](https://github.com/JuscelinoCarvalho) | [Luan Fernandes](https://github.com/souluanf) | 
 [Paulo Bof](https://github.com/paulobof) | [Wesley Guimaraes](https://github.com/wees-guimaraes)
 
 
