@@ -1,6 +1,6 @@
 spring:
   application:
-    name: chatbot
+    name: chatbot-fiap
 
 telegram:
   token: ${TELEGRAM-TOKEN}
@@ -9,9 +9,9 @@ open-weather-map:
   token: ${OPEN-WEATHER-TOKEN}
 
 google:
-  name: fiap-bot
+  name: chatbot-fiap
   projectid: ${GOOGLE_CLOUD_PROJECT}
-  languageCode: en-US
+  languageCode: pt-BR
 
 logging:
   level:
