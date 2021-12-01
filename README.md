@@ -45,7 +45,7 @@ To get started, [download][maven-download] and [install][maven-install] it.
     ```text
     /start    - Iniciar chat
  
-    /weather  - Previsao do tempo
+    /previsao  - Previsão do tempo
     ```
 
 
