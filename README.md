@@ -12,7 +12,9 @@ To get started, [download][maven-download] and [install][maven-install] it.
 ### Setup
 
 * Create a project with the [Google Cloud Console][cloud-console], and enable the [Dialogflow API][dialogflow-api].
+
 * [Set up][auth] authentication. For example, from the Cloud Console, create a service account, download its json credentials file, then set the appropriate environment variable:
+
     ```shell
     set GOOGLE_APPLICATION_CREDENTIALS=path/file.json
     ```
@@ -29,6 +31,7 @@ To get started, [download][maven-download] and [install][maven-install] it.
 ### Run Application
 
 * In the project path, open the shell console, install the dependencies and run the application:
+
     ```shell
     mvn clean install -Dmaven.test.skip=true
     ```
@@ -38,8 +41,10 @@ To get started, [download][maven-download] and [install][maven-install] it.
 
 ### Telegram bot
 * Functions that can be performed in chatbot.
+
     ```text
     /start    - Iniciar chat
+ 
     /weather  - Previsao do tempo
     ```
 
