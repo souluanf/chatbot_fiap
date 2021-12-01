@@ -28,9 +28,7 @@ public class TelegramService {
         TelegramBot bot = new TelegramBot(appConfig.getTelegramToken());
         bot.setUpdatesListener(updates -> {
             for (Update update : updates) {
-
                 Message message = update.message();
-
                 if (update.message() != null) {
                 	if (message.messageId() == 1 || message.text().equals("/start")) {
                 		start(bot, message);
@@ -57,7 +55,6 @@ public class TelegramService {
                 var weather = weatherService.getWeather(message.text());
                 var response = String.format("Previsão do tempo em %s é de %sºC.", message.text(), Math.round(weather.getMain().getTemp()));
                 bot.execute(new SendMessage(message.chat().id(), response));
-
             } catch (Exception e) {
                 log.info(e.getMessage());
             }

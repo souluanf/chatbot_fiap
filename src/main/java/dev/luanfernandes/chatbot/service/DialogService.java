@@ -27,13 +27,11 @@ public class DialogService {
 			QueryInput queryInput = QueryInput.newBuilder().setText(textInput).build();
 			DetectIntentResponse response = sessionsClient.detectIntent(session, queryInput);
 			queryResult = response.getQueryResult();
-
 			log.info("================================================================================");
 			log.info(String.format("Entrada: '%s'", queryResult.getQueryText()));
 			log.info(String.format("Intent: '%s'", queryResult.getIntent().getDisplayName()));
 			log.info(String.format("Confiança: %f", queryResult.getIntentDetectionConfidence()));
 			log.info(String.format("Saída: '%s'", queryResult.getFulfillmentText()));
-
 		} catch (Exception e) {
 			log.error(e.getMessage(), e);
 		}

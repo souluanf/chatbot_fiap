@@ -29,11 +29,8 @@ public class WeatherService {
                 .unitSystem(UnitSystem.METRIC)
                 .retrieve()
                 .asJSON();
-
         Gson gson = new Gson();
-
         return gson.fromJson(result, Root.class);
-
     }
 }
 
