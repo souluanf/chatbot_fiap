@@ -43,7 +43,7 @@ To get started, [download][maven-download] and [install][maven-install] it.
 * Commands that can be performed in chatbot.
 
     ```text
-    /start    - Iniciar chat
+    /start     - Iniciar chat
  
     /previsao  - Previsão do tempo
     ```
