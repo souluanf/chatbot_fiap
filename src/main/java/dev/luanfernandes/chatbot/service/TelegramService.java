@@ -5,7 +5,6 @@ import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ChatAction;
-import com.pengrad.telegrambot.request.DeleteMessage;
 import com.pengrad.telegrambot.request.SendChatAction;
 import com.pengrad.telegrambot.request.SendMessage;
 import dev.luanfernandes.chatbot.config.AppConfig;
@@ -33,16 +32,13 @@ public class TelegramService {
                 Message message = update.message();
 
                 if (update.message() != null) {
-                	if (message.messageId() == 1 || message.text().equals("/iniciar")) {
+                	if (message.messageId() == 1 || message.text().equals("/start")) {
                 		start(bot, message);
-                	} else if (message.text().equals("/previsao") || previsao) {
+                	} else if (message.text().equals("/weather") || previsao) {
                 		weather(bot, message);
-                	} else if (message.text().equals("/limpar")) {
-                		clean(bot, message);
                 	} else {
                 		dialogFlow(dialogService, bot, message);
                 	}
-					
 				}
             }
             return UpdatesListener.CONFIRMED_UPDATES_ALL;
@@ -53,12 +49,6 @@ public class TelegramService {
         bot.execute(new SendChatAction(message.chat().id(), ChatAction.typing));
         String response = dialogService.detectIntents(message.text());
         bot.execute(new SendMessage(message.chat().id(), response));
-    }
-
-    private void clean(TelegramBot bot, Message message) {
-        for (int i = 1; i < message.messageId(); i++) {
-            bot.execute(new DeleteMessage(message.chat().id(), i));
-        }
     }
 
     private void weather(TelegramBot bot, Message message) {
