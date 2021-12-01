@@ -40,7 +40,7 @@ To get started, [download][maven-download] and [install][maven-install] it.
     ```
 
 ### Telegram bot
-* Functions that can be performed in chatbot.
+* Commands that can be performed in chatbot.
 
     ```text
     /start    - Iniciar chat
