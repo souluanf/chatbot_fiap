@@ -2,7 +2,7 @@
 
 These project demonstrate the use of the [Dialogflow API][dialogflow] to create a chatbot.
 
-## Java Version
+### Java Version
 This sample requires you to have
 [Java11][Java11].
 
