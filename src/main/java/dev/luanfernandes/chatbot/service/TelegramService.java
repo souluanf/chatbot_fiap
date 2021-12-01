@@ -34,7 +34,7 @@ public class TelegramService {
                 if (update.message() != null) {
                 	if (message.messageId() == 1 || message.text().equals("/start")) {
                 		start(bot, message);
-                	} else if (message.text().equals("/weather") || previsao) {
+                	} else if (message.text().equals("/previsao") || previsao) {
                 		weather(bot, message);
                 	} else {
                 		dialogFlow(dialogService, bot, message);
