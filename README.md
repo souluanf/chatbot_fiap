@@ -36,6 +36,13 @@ To get started, [download][maven-download] and [install][maven-install] it.
     mvn spring-boot:run
     ```
 
+### Telegram bot
+* Functions that can be performed in chatbot.
+    ```text
+    /start    - Iniciar chat
+    /weather  - Previsao do tempo
+    ```
+
 
 ### Authors:
 
